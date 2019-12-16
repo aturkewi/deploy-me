@@ -10,11 +10,14 @@
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0"
   },
+  "homepage" : "http://aturkewi.github.io/deploy-me",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
